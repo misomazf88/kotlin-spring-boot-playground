@@ -43,7 +43,7 @@ jobs:
       run: ./gradlew BootJar
     
     - name: Docker Compose Build
-      working-directory: ./24_ContinuousIntegrationWithAWS/
+      working-directory: ./24_ContinuousIntegrationWithAWS/rest-with-spring-boot-and-kotlin-erudio
       run: docker compose build
 
     - name: Tag and push image to Amazon ECR
