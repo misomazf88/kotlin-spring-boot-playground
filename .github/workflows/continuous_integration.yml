@@ -48,11 +48,11 @@ jobs:
 
     - name: Tag and push image to Amazon ECR
       run: |
-        docker tag ${{ secrets.DOCKER_USERNAME }}/rest-with-spring-boot-erudio:latest ${{ secrets.ECR_IMAGE_REPO_URL }}:${{github.run_id}}
-        docker tag ${{ secrets.DOCKER_USERNAME }}/rest-with-spring-boot-erudio:latest ${{ secrets.ECR_IMAGE_REPO_URL }}:latest
+        docker tag mazf88/rest-with-spring-boot-erudio:latest 966388213582.dkr.ecr.us-east-1.amazonaws.com/dermo-app-backend-movil:${{github.run_id}}
+        docker tag mazf88/rest-with-spring-boot-erudio:latest 966388213582.dkr.ecr.us-east-1.amazonaws.com/dermo-app-backend-movil:latest
 
-        docker push ${{ secrets.ECR_IMAGE_REPO_URL }}:${{github.run_id}}
-        docker push ${{ secrets.ECR_IMAGE_REPO_URL }}:latest
+        docker push 966388213582.dkr.ecr.us-east-1.amazonaws.com/dermo-app-backend-movil:${{github.run_id}}
+        docker push 966388213582.dkr.ecr.us-east-1.amazonaws.com/dermo-app-backend-movil:latest
 
     - name: Download task definition
       run: |
