@@ -11,9 +11,6 @@ jobs:
     steps:
     - name: Checkout the code
       uses: actions/checkout@v3
-
-    - name: Make gradlew executable
-      run: chmod +x ./gradlew
     
     - name: Log in to Docker Hub
       uses: docker/login-action@v1
@@ -37,6 +34,9 @@ jobs:
       with:
         java-version: '17'
         distribution: 'adopt'
+        
+    - name: Make gradlew executable
+      run: chmod +x ./24_ContinuousIntegrationWithAWS/rest-with-spring-boot-and-kotlin-erudio/gradlew
         
     - name: Build Application Jar
       working-directory: ./24_ContinuousIntegrationWithAWS/rest-with-spring-boot-and-kotlin-erudio
