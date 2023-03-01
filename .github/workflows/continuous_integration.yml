@@ -3,7 +3,7 @@ name: Continuous Integration with Github Actions
 on:
   push:
     branches: 
-      - main
+      - kotlin_1.8.0_spring_boot_3.0.1
 jobs:
   build:
     runs-on: ubuntu-latest
