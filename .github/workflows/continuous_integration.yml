@@ -33,11 +33,14 @@ jobs:
       with:
         java-version: '17'
         distribution: 'adopt'
-        cache: maven
+        cache: gradle
+        
+    - name: Make gradlew executable
+      run: chmod +x ./gradlew
     
     - name: Build Application Jar
       working-directory: ./24_ContinuousIntegrationWithAWS/rest-with-spring-boot-and-kotlin-erudio
-      run: mvn clean package
+      run: ./gradlew BootJar
     
     - name: Docker Compose Build
       working-directory: ./24_ContinuousIntegrationWithAWS/
