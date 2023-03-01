@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  test:
+    image: openjdk:8
+    volumes:
+      - C:/git/Maestria:/ws
+    working_dir: /ws/dermo-app-backend-movil
+    user: ${MY_USER:-root}
+    depends_on:
+      - postgres
+      - redis
+    environment:
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      SPRING_PROFILES_ACTIVE: test
+    command: >
+      ./gradlew --no-daemon
+      -g ./.gradle-cache
+      -Dspring.datasource.url=jdbc:postgresql://postgres:5432/dermoapp?socketTimeout=30
+      -Dspring.redis.host=redis
+      clean test ktlintCheck jacocoTestReport
+  redis:
+    image: redis
+  postgres:
+    image: postgres:13.7
+    environment:
+      POSTGRES_DB: 'dermoapp'
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'postgres'
+      POSTGRES_SCHEMA: 'dermoapp_patient'

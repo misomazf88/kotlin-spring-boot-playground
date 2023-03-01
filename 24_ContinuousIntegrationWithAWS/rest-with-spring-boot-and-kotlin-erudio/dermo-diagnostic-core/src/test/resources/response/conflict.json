@@ -1,0 +1,11 @@
+{
+  "message": "La operación presentó un error durante la ejecución.",
+  "error": [
+    {
+      "error": {
+        "code": 1720020,
+        "message": "Código de discapacidad incorrecto."
+      }
+    }
+  ]
+}

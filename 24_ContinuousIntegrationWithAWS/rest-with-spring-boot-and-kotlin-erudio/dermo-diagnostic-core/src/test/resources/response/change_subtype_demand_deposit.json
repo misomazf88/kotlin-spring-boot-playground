@@ -1,0 +1,17 @@
+{
+  "transactionAccount": {
+    "account": {
+      "code": 1010
+    }
+  },
+  "links": {
+    "self": "/demand-deposits/accounts-subtypes",
+    "navs": [
+      {
+        "href": "/demand-deposits/accounts-subtypes/46",
+        "rel": "accounts-subtypes",
+        "type": "PATCH"
+      }
+    ]
+  }
+}

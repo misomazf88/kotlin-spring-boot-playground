@@ -1,0 +1,49 @@
+{
+  "account": {
+    "code": 262,
+    "number": "0000100100000000157",
+    "status": {
+      "code": "A"
+    },
+    "passbook": {
+      "number": 0
+    },
+    "branch": {
+      "code": 1
+    },
+    "currency": {
+      "code": 0
+    },
+    "originationDate": "2021-04-07",
+    "officer": {
+      "code": 1
+    },
+    "customer": {
+      "code": 517
+    },
+    "name": "Juanel Suarez",
+    "lastCutoffBalance": "0.00",
+    "lastActivityDate": "2021-04-07",
+    "nextCutoffDate": "2021-04-30",
+    "lastCutoffDate": "2021-04-06",
+    "lastCapitalizationDate": "2021-04-06",
+    "accountAssignedToClerk": false,
+    "accountType": {
+      "code": "P"
+    },
+    "accountSubtype": {
+      "code": 4
+    },
+    "externalCode": "4f9aa743-0cad-46f0-b055-c42e0ab6e217"
+  },
+  "links": {
+    "self": "/demand-deposits/by-external-code4f9aa743-0cad-46f0-b055-c42e0ab6e217",
+    "navs": [
+      {
+        "href": "/demand-deposits/by-external-code4f9aa743-0cad-46f0-b055-c42e0ab6e217/262",
+        "rel": "by-external-code",
+        "type": "GET"
+      }
+    ]
+  }
+}

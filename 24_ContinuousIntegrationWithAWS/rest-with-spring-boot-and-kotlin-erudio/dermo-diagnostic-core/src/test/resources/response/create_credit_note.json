@@ -1,0 +1,15 @@
+{
+  "transactionAccount": {
+    "code": 18648
+  },
+  "links": {
+    "self": "/demand-deposits/credit-notes",
+    "navs": [
+      {
+        "href": "/demand-deposits/credit-notes",
+        "rel": "credit-notes",
+        "type": "POST"
+      }
+    ]
+  }
+}

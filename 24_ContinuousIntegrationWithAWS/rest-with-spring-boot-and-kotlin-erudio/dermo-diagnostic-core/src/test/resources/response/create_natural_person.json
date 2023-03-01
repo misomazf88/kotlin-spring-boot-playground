@@ -1,0 +1,15 @@
+{
+  "naturalPerson": {
+    "code": 65412
+  },
+  "links": {
+    "self": "/customers/natural-persons",
+    "navs": [
+      {
+        "href": "/customers/natural-persons/119",
+        "rel": "natural-persons",
+        "type": "POST"
+      }
+    ]
+  }
+}

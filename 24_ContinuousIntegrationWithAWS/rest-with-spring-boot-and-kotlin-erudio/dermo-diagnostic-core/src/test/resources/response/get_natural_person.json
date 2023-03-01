@@ -1,0 +1,41 @@
+{
+  "naturalPerson": {
+    "code": 489,
+    "identification": {
+      "number": "77555589036",
+      "type": {
+        "code": "CC"
+      }
+    },
+    "name": "Juanel",
+    "otherName": "",
+    "lastName": "Suarez",
+    "otherLastName": "",
+    "status": {
+      "code": "P"
+    },
+    "subsidiary": {
+      "code": 1
+    },
+    "branch": {
+      "code": 1
+    },
+    "enrollmentDate": "2021-04-07T00:00Z",
+    "lastUpdateDate": "2021-04-07T00:00Z",
+    "officer": {
+      "code": 1
+    },
+    "retention": false,
+    "gender": {
+      "code": "F"
+    },
+    "maritalStatus": {
+      "code": "SO"
+    },
+    "currentOperationsWithFinancialEntity": true,
+    "externalCode": "4f9aa743-0cad-46f0-b055-c42e0ab6e216",
+    "countryBirth": {
+      "code": 170
+    }
+  }
+}

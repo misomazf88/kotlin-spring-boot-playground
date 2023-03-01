@@ -1,0 +1,35 @@
+{
+  "account": {
+    "number": "4000010100000000172",
+    "passbook": {
+      "balance": "0.00"
+    },
+    "availableBalance": "2899.70",
+    "availableRemittancesBalance": "0.00",
+    "availableAmount": "2899.70",
+    "ledgerBalance": "2899.70",
+    "minimumBalance": "0.00",
+    "maximumBalance": "5972286513.60",
+    "amountOfCredits": "3100.50",
+    "amountOfDebits": "200.80",
+    "numberOfDebits": 1,
+    "numberOfCredits": 3,
+    "availableFundsForWithdrawalBeforeTaxes": "2899.70"
+  },
+  "taxExemptionConcepts": {
+    "base": "0.00"
+  },
+  "accountExemptionTax": {
+    "amountOfDebits": "2899.70"
+  },
+  "links": {
+    "self": "/demand-deposits/17/balances",
+    "navs": [
+      {
+        "href": "/demand-deposits/17/balances/null",
+        "rel": "balances",
+        "type": "GET"
+      }
+    ]
+  }
+}

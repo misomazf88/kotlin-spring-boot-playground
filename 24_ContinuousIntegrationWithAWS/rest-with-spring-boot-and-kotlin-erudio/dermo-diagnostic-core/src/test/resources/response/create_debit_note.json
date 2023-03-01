@@ -1,0 +1,8 @@
+{
+  "transactionAccount": {
+    "code": 17433
+  },
+  "links": {
+    "self": "/demand-deposits/debit-notes"
+  }
+}
